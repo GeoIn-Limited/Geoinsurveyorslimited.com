@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoIn Properties ltd</title>
+    <link rel="stylesheet" href="properties.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://kit.fontawesome.com/e57778b6af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">OurWork</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Land Surveyor and Property Consultant</p>
+            <h1>GeoIn <span>Surveyors</span> <br>Properties LTD</h1>
+        </div>
+    </div>
+</div>
+    <!-- this is code for properties gallery -->
+    <div id="properties">
+        <div class="container">
+            <h1 class="sub-title">GeoIn Available Properties For Sale</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Properties/Lands/plot-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Land Size</h3>
+                        <p>Land Location<br><br>Land price</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Properties/Lands/plot-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Land Size</h3>
+                        <p>Land Location<br><br>Land price</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Properties/Lands/plot-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Land Size</h3>
+                        <p>Land Location<br><br>Land price</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Properties/Lands/plot-4.jpg" alt="">
+                    <div class="layer">
+                        <h3>Land Size</h3>
+                        <p>Land Location<br><br>Land price</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Properties/Lands/plot-5.jpg" alt="">
+                    <div class="layer">
+                        <h3>Land Size</h3>
+                        <p>Land Location<br><br>Land price</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Properties/Lands/plot-6.jpg" alt="">
+                    <div class="layer">
+                        <h3>Land Size</h3>
+                        <p>Land Location<br><br>Land price</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- houses section -->
+                <div class="work">
+                    <img src="images/Properties/Houses/House-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>House bedrooms</h3>
+                        <p>House Location<br><br>House Price</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Properties/Houses/House-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>House bedrooms</h3>
+                        <p>House Location<br><br>HousePrice price</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Properties/Houses/House-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>House bedrooms</h3>
+                        <p>House Location<br><br>House price</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    
+</body>
+</html>
